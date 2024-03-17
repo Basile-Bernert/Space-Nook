@@ -1,0 +1,182 @@
+
+
+/* Début switch */
+
+body.Clair .switch{
+    background: #A2D1FD;
+    box-shadow: 0px 9px 6px 0px #72BBFF inset;
+    border: 1px solid;
+    border-color: #72BBFF;
+
+}
+body.Clair .switch .rond{
+    background: rgba(255, 193, 135, 0.96);
+    box-shadow: 0px 2.6px 5.2px 0px #FFD0A5 inset, 0px -2.6px 5.2px 0px #FFA149 inset, 0px 0px 11.7px 0px rgba(255, 193, 135, 0.60), -3.9px 6.5px 5.2px 0px rgba(183, 183, 183, 0.35);
+}
+body.Sombre .switch{
+    background: #1F2533;
+    box-shadow: 0px 7.8px 11.7px 0px #171B24 inset;
+    border: 1px solid;
+    border-color: rgb(41, 40, 40);
+}
+body.Sombre .switch .rond{
+    background: #DEE5F3;
+    box-shadow: 0px 2.6px 5.2px 0px #BFBFC0 inset, 0px -2.6px 5.2px 0px #FFF inset, -3.9px 0px 19.5px 0px rgba(183, 183, 183, 0.31);
+    position: relative;
+}
+body.Sombre .switch .rond::before{
+    opacity: 1;
+}
+body.Clair .switch .rond::before{
+    opacity: 0;
+}
+.switch .rond::before{
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #535c72;
+    transition: opacity 400ms;
+}
+h2{
+
+    text-align: center;
+
+}
+.switch{
+    
+    height: 66px;
+    width: 169px;
+    border-radius: 78px;
+    position: relative;
+    transition: all 500ms;  
+    overflow: hidden;
+    transform: scale(0.6);
+    margin: auto;
+}
+
+.switch .rond{
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    transition: left 500ms;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.switch .nuage{
+    height: 44px;
+    width: 85px;
+    position: absolute;
+    transform: rotate(-4.6deg);
+    transition: transform 500ms;
+}
+body.Sombre .switch .nuage:nth-child(2),
+body.Sombre .switch .nuage:nth-child(3){
+    transform: translateX(-117px);
+}
+body.Sombre .switch .nuage:nth-child(4),
+body.Sombre .switch .nuage:nth-child(5){
+    transform: translateX(90px);
+}
+.switch .nuage .rond-nuage{
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+}
+
+.switch .nuage:nth-child(2){
+    top: 52px;
+    left: 17px;
+    z-index: 2;
+}
+.switch .nuage:nth-child(3){
+    top: 43px;
+    left: 15px;
+    z-index: 1;
+}
+.switch .nuage:nth-child(3) .rond-nuage{
+    background-color: #daedfe;
+}
+.switch .nuage:nth-child(4){
+    top: 37px;
+    left: 82px;
+    z-index: 2;
+}
+.switch .nuage:nth-child(5){
+    top: 15px;
+    left: 91px;
+    z-index: 1;
+}
+.switch .nuage:nth-child(5) .rond-nuage{
+    background-color: #daedfe;
+}
+.switch .nuage .rond-nuage:nth-child(1){
+    top: 12px;
+    left: 0px;
+}
+.switch .nuage .rond-nuage:nth-child(2){
+    top: 3px;
+    left: 19px;
+}
+.switch .nuage .rond-nuage:nth-child(3){
+    top: 19px;
+    left: 21px;
+}
+.switch .nuage .rond-nuage:nth-child(4){
+    top: 6px;
+    left: 37px;
+}
+.switch .nuage .rond-nuage:nth-child(5){
+    top: 18px;
+    left: 44px;
+}
+.switch .nuage .rond-nuage:nth-child(6){
+    top: 8px;
+    left: 58px;
+}
+/* fin nuages */
+/* étoiles */
+.switch .étoiles{
+    top: 7px;
+    left: 3px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+body.Sombre .switch .étoiles{
+    opacity: 1;
+}
+
+/* fin étoiles */
+.switch.actif .rond{
+    left: calc(100% - 60px); /* Complétement à droite - la taille du rond */
+}
+
+/* fin switch */
+
+/*@media (prefers-color-scheme: dark){
+    /* CSS propre au mode sombre *//*
+    body{
+        background-color: var(--couleur-ap-sombre);
+        color: var(--couleur-texte-sombre);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    /* CSS propre au mode clair *//*
+    body{
+        background-color: var(--couleur-ap-clair);
+        color: var(--couleur-texte-clair);
+    }
+}*/
+

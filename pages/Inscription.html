@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/Connexion_Inscription.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" href="../images/logo_space_nook_2 sans blanc.png" type="image/png">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="../index.html"><img src="../images/logo_space_nook_2 sans blanc.png" alt="Retour à l'acceuil"></a>    
+            </li>
+            <li>
+                
+            </li>
+            <li>
+                <a class="item" href="La coupe de france.html">La coupe de france</a>
+            </li>
+            <li>
+                <a class="item" href="Notre robot.html">Notre robot</a>
+            </li>
+            <li>
+                <a class="item" href="Notre telecommande.html">Notre telecommande</a>
+            </li>
+            <li>
+                <a class="item" href="Notre club.html">Notre club</a>
+            </li>
+            <li>
+                <a class="icon selectionne" href="Connexion.html"><span class="material-symbols-outlined">account_circle</span></a>
+                <a class="icon" href="Paramètres.html"><span class="material-symbols-outlined">settings</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+    <h1>S'inscrire</h1>
+
+    <form action="">
+        <div class="input">
+            <label for="input-nom">Nom :</label>
+            <input type="text" id="input-nom" placeholder="Bernert" required>
+        </div>
+        
+        <div class="input">
+            <label for="input-prenom">Prénom :</label>
+            <input type="text" id="input-prenom" minlength="3" maxlength="20" required>
+        </div class="input">
+        
+        <div class="input">
+            <label for="input-email">Email :</label>
+            <input type="email" id="input-email" placeholder="email.example@gmail.com" required>
+        </div>
+
+        <div class="input">
+            <label for="input-date-de-naissance">Date de naissance :</label>
+            <input type="date" id="input-date-de-naissance" required>
+        </div>
+        
+        <div class="input">
+            <label for="input-password">Mot de passe :</label>
+            <input type="password" id="input-password" required>
+        </div>
+        <div class="input">
+            <label for="input-confirm-password">Confirmer le mot de passe :</label>
+            <input type="password" id="input-confirm-password" required>
+        </div>
+        
+        <div class="erreur nepasafficher">
+            Les mots de passe ne correspondent pas.
+        </div>
+        <div class="input">
+            <label for="condition-d-utilisation">J'accepte les conditions générales d'utilisation</label>
+            <input type="checkbox" id="condition-d-utilisation" required>
+        </div>
+        
+        <input type="submit" value="S'inscrire">
+
+    </form>
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/connexion-inscription.js"></script>
+</body>
+</html>

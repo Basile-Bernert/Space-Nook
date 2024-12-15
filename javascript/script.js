@@ -23,12 +23,13 @@ function valeurDuCookie(nomDuCookie){ // fonction qui retourne la valeur d'un co
 if( valeurDuCookie("thème") == "sombre"){
     document.querySelector("body").classList.add('Sombre')
     document.querySelector("body").classList.remove('Clair')
-    document.querySelector(".logo-site").src="logo_blanc_sans_fond.png"
+    document.querySelector(".logo-site").src="images/logo_blanc_sans_fond.png"
 
 }else{
 
     document.querySelector("body").classList.add('Clair')
     document.querySelector("body").classList.remove('Sombre')
+    document.querySelector(".logo-site").src="images/Logo_dancing-nook.png"
 }
 
 

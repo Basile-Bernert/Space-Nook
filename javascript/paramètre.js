@@ -52,6 +52,7 @@ function changerDeTheme() {
         document.querySelector("body").classList.add('Sombre')
         document.querySelector("body").classList.remove('Clair')
         themeClair = false
+        document.querySelector(".logo-site").src="images/logo_blanc_sans_fond.png"
 
         if(cookies_autorisés == true){
             document.cookie = "thème=sombre; path=/"
@@ -61,6 +62,7 @@ function changerDeTheme() {
         document.querySelector("body").classList.add('Clair')
         document.querySelector("body").classList.remove('Sombre')
         themeClair = true
+        document.querySelector(".logo-site").src="images/Logo_dancing-nook.png"
 
         if(cookies_autorisés == true){
             document.cookie = "thème=clair; path=/"

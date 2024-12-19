@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre robot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paramètres.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" href="images/Logo_dancing-nook.png" type="image/png">
+</head>
+<body>
+    
+
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="index.html"><img class="logo-site" src="images/Logo_dancing-nook.png" alt="Retour à l'accueil"></a>    
+            </li>
+            <li class="item">
+                <a href="La coupe de france.html">La coupe de france</a>
+            </li>
+            <li class="item selectionne">
+                <a href="Notre robot.html">Notre robot</a>
+            </li>
+            <li class="item">
+                <a href="Notre telecommande.html">Notre telecommande</a>
+            </li>
+            <li class="item">
+                <a href="Notre club.html">Notre club</a>
+            </li>
+            <li class="switch-JN">
+                
+                <div id="bouton" class="switch">
+                    <div class="rond"></div>
+                    <div class="nuage">
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                    </div>
+                    <div class="nuage">
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                    </div>
+                    <div class="nuage">
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                    </div>
+                    <div class="nuage">
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                        <div class="rond-nuage"></div>
+                    </div>
+                    <img src="images/étoiles.svg" class="étoiles">
+                </div>
+                
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Notre robot</h1>
+
+        <div class="image_et_texte">
+            <div class="image">
+                <img src="images/Robot (1).jpg" alt="Le Robot">
+            </div>
+            <div class="texte">
+                <h2>La structure du robot </h2>
+                <p>
+                    Notre robot est composé d’une armature en profilés aluminium, 
+                    découpés par nos soins, et de deux étages en bois « Contreplaqué », 
+                    usinés par notre CNC. Les étages sont solidarisés avec des équerres de fixation, 
+                    elles-mêmes vissées sur les profilés. Le toit de notre robot est en plexiglass.
+                </p>
+                <h2>Les roues Mecanum</h2>
+                <p>
+                    Les roues Mecanum sont dotées de petits
+                    rouleaux permettant au robot, si elles sont
+                    disposées en carré, de se déplacer dans
+                    toutes les directions.
+                    <br>
+                    Par exemple :
+                    <br>
+                    avant / arrière
+                    <br>
+                    en faisant rouler toutes les roues dans le
+                    même sens
+                    <br>
+                    latéral droite / gauche
+                    <br>
+                    en faisant tourner les roues avant droite et
+                    arrière gauche dans le même sens et les
+                    roues arrière droite et avant gauche dans
+                    l’autre
+                    <br>
+                    rotation pure droite / gauche
+                    <br>
+                    en faisant tourner les roues droites dans un
+                    sens et les roues gauches dans l’autre
+                    Nous avons choisi d’utiliser ces roues pour
+                    notre robot dans le but de le rendre plus
+                    facile à piloter.
+                </p>
+            </div>
+        </div>
+        
+        <div class="image_et_texte">
+            <div class="image">
+                <img src="images/Robot (2).jpg" alt="Le Robot">
+            </div>
+            <div class="texte" >
+                <h2>Le moteur pas à pas</h2>
+                <p>
+                    Un moteur pas à pas est un type de moteur électrique utilisé pour convertir des signaux électriques 
+                    en mouvement mécanique. 
+                    Contrairement à d'autres types de moteurs, 
+                    les moteurs pas à pas avancent par étapes précises plutôt que de tourner en continu. 
+                    Chaque pas correspond à un angle fixe, ce qui permet un contrôle précis du positionnement. 
+                    Ces moteurs sont largement utilisés dans les imprimantes 3D, les robots, 
+                    les machines CNC et d'autres applications nécessitant un mouvement précis et contrôlé.
+        
+                </p>
+        
+                <h2>L'ascenseur</h2>
+                <p>
+                    L' "ascenseur" du robot permet de monter et de
+                    descendre la pince : il est constitué de deux barres de
+                    métal verticales, d'un moteur pas-à-pas et d'une courroie
+                    supportant une pièce imprimée en 3D qui retient la
+                    pince.
+                    En actionnant le moteur dans un sens ou l'autre, la
+                    courroie tire la pièce de la pince vers le haut ou le bas, à
+                    l'aide de roulements à billes autour des barres de métal.
+                    Lorsque l'ascenseur atteint le haut ou le bas du robot, il
+                    est arrêté par deux capteurs fin de course.
+                    La pince est formée de 2 pièces 3D, et deux
+                    servomoteurs. La partie fixe de la pince est la pince
+                    ascenseur, qui est reliée à l'ascenseur par un
+                    servomoteur, et la deuxième partie est la pince mobile,
+                    elle-même rattachée à la pince ascenseur par un
+                    servomoteur.
+                    L'ascenseur et la pince ensemble contiennent donc 3
+                    moteurs.
+                </p>
+            </div>
+        </div>
+
+        <div class="image_et_texte">
+            <div class="image">
+                <img src="images/PAMI.jpg" alt="Le PAMI">
+            </div>
+            <div class="texte" >
+                <h2>Le PAMI</h2>
+                <p>
+                    Le système de direction du PAMI est basé sur
+                    deux capteurs qui mesurent l'absorbance
+                    d'une couleur. C'est très simple : lorsque le
+                    capteur renvoie des valeurs élevé c'est qu'il
+                    est sur du noir. La ligne reliant la base des
+                    PAMI aux serres étant noire, lorsque les deux
+                    capteurs retournent une valeur élevée le
+                    PAMI sait qu'il est sur la bande noire, ensuite il
+                    suffit de demander aux moteurs de tourner
+                    plus ou moins vite pour que le PAMI puisse
+                    tourner lorsque l'un des deux capteurs n'est
+                    plus en face de la ligne noire
+
+                </p>  
+            </div>
+        </div>
+    
+    </main>   
+    <footer>&copy;&nbsp;2024-2025&nbsp;Dancing&nbsp;Nook&nbsp;· Basile&nbsp;Bernert&nbsp;· All&nbsp;rights&nbsp;reserved&nbsp;·</footer> 
+    <script src="javascript/script.js"></script>
+    <script src="javascript/paramètre.js"></script>
+</body>
+</html>
